@@ -12,8 +12,6 @@ git clone https://github.com/igorrendulic/food_recognition_with_calorie_mama.git
 
 Now import project to Android Studio and create a file under resources: `res/values/secrets.xml`
 ```xml
-<!-- Inside of `res/values/secrets.xml` -->
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="caloriemama_token">YOUR TOKEN HERE</string>
 </resources>
