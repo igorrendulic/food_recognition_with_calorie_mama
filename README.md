@@ -4,6 +4,8 @@
 
 *Calorie Mama uses machine learning algorithms to identify over one hundred thousand foods, drinks, and packaged goods. It covers many local and global foods.*
 
+Find out more here at [http://www.caloriemama.ai](http://www.caloriemama.ai)
+
 ## Running the example
 
 You need an access token to Calorie Mama API. Obtain one by creating a free developer account [https://developers.caloriemama.ai](https://developers.caloriemama.ai)
