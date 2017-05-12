@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FoodRecognizerExample</string>
+    <string name="take_a_picture">Take a food photo!</string>
+    <string name="image_view">Image View</string>
+</resources>
