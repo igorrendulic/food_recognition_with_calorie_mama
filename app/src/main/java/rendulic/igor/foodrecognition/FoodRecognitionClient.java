@@ -86,8 +86,10 @@ public class FoodRecognitionClient {
                 }
                 reader.close();
                 httpConn.disconnect();
+            } else if (status == HttpURLConnection.HTTP_FORBIDDEN) {
+                throw new FoodRecognitionException("Error code: " + status + ", Description: Access denied. Check your Token please");
             } else {
-                throw new FoodRecognitionException("Error code: " + status);
+                throw new FoodRecognitionException("Error code: " + status + ", Description: " + output.toString());
             }
         } catch (IOException e) {
             throw new FoodRecognitionException(e.getMessage(), e);

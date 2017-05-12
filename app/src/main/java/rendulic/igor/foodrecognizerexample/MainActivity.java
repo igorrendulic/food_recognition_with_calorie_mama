@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     SimpleAdapter simpleAdapter;
 
-    private static final String MY_TOKEN = "YOUR TOKEN HERE";
+    private static final String MY_TOKEN = "11838591315dc4211da04653c0aa8ade2c7f23cad0c8c158fc9";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
