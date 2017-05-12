@@ -1,10 +1,6 @@
 # Food Recognition from images using Calorie Mama AI API
 
-<p align="center">
-  <img src="https://www.dropbox.com/sh/cvlpps0p439lz69/AAAFUtK3Mpd99QuyS48BqhFda?dl=0&preview=CM_Screenshot_1.png">
-</p>
-
-# What is Calorie Mama API?
+## What is Calorie Mama API?
 
 *Calorie Mama uses machine learning algorithms to identify over one hundred thousand foods, drinks, and packaged goods. It covers many local and global foods.*
 
