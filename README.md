@@ -29,6 +29,10 @@ If you'd like to use Android Emulator and a WebCam read the next section.
 
 As you probably know this is not the safest way to keep secrets in Android app. You can read more [https://rammic.github.io/2015/07/28/hiding-secrets-in-android-apps/](here).
 
+### End Result
+
+![end result](https://storage.googleapis.com/rendulic_public_images/food_recognition_example.png "End Result")
+
 ## Setup Android Studio to use a WebCam
 
 1. Tools -> Android -> AVD Manager
