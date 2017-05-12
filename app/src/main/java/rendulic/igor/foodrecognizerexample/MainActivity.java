@@ -43,12 +43,14 @@ public class MainActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     SimpleAdapter simpleAdapter;
 
-    private static final String MY_TOKEN = "YOUR KEY HERE";
+    private static String MY_TOKEN = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MY_TOKEN = getString(R.string.caloriemama_token);
 
         takePicture = (Button) findViewById(R.id.button_image);
         imageView = (ImageView) findViewById(R.id.imageview);
