@@ -19,7 +19,7 @@ import java.net.URLConnection;
 
 public class FoodRecognitionClient {
 
-    private static final String ENDPOINT = "https://api.caloriemama.ai/food";
+    private static final String ENDPOINT = "https://api.caloriemama.ai/v1/foodrecognition";
 
     private String boundary;
     private static final String LINE_FEED = "\r\n";
