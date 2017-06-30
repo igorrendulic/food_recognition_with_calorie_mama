@@ -3,6 +3,8 @@ package rendulic.igor.foodrecognition;
 import android.graphics.Bitmap;
 
 /**
+ * Simple Task object for FoodRecognitionTask
+ *
  * Created by igor
  */
 

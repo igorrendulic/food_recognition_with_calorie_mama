@@ -19,7 +19,7 @@ import java.net.URLConnection;
 
 public class FoodRecognitionClient {
 
-    private static final String ENDPOINT = "https://api.caloriemama.ai/v1/foodrecognition";
+    private static final String ENDPOINT = "https://api-2445582032290.production.gw.apicast.io/v1/foodrecognition";
 
     private String boundary;
     private static final String LINE_FEED = "\r\n";
@@ -27,6 +27,12 @@ public class FoodRecognitionClient {
     private OutputStream outputStream;
     private PrintWriter writer;
 
+    /**
+     * Food Recognition for Calorie Mama API Main method
+     *
+     * @param foodTask
+     * @throws IOException
+     */
     public FoodRecognitionClient(FoodTask foodTask) throws IOException {
         // creates a unique boundary based on time stamp
         if (foodTask == null) {
@@ -34,14 +40,13 @@ public class FoodRecognitionClient {
         }
 
         boundary = "===" + System.currentTimeMillis() + "===";
-        URL url = new URL(ENDPOINT);
+        URL url = new URL(ENDPOINT + "?" + foodTask.getToken());
         httpConn = (HttpURLConnection) url.openConnection();
         httpConn.setUseCaches(false);
         httpConn.setDoOutput(true);    // indicates POST method
         httpConn.setDoInput(true);
         httpConn.setRequestProperty("Content-Type",
                 "multipart/form-data; boundary=" + boundary);
-        httpConn.setRequestProperty("Authorization", "OAuth " + foodTask.getToken());
         outputStream = httpConn.getOutputStream();
         writer = new PrintWriter(new OutputStreamWriter(outputStream, "UTF-8"),
                 true);

@@ -9,9 +9,10 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 /**
+ * Async Task
+ *
  * Created by igor
  */
-
 public class FoodRecognitionTask extends AsyncTask<FoodTask,Void,String> {
 
     private FoodServiceCallback<JSONObject> delegate = null;
