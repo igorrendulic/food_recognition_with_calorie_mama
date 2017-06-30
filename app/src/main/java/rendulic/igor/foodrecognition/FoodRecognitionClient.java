@@ -40,7 +40,7 @@ public class FoodRecognitionClient {
         }
 
         boundary = "===" + System.currentTimeMillis() + "===";
-        URL url = new URL(ENDPOINT + "?" + foodTask.getToken());
+        URL url = new URL(ENDPOINT + "?user_key=" + foodTask.getToken());
         httpConn = (HttpURLConnection) url.openConnection();
         httpConn.setUseCaches(false);
         httpConn.setDoOutput(true);    // indicates POST method
