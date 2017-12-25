@@ -32,7 +32,10 @@ public class JSONUtil {
                 JSONArray items = result.optJSONArray("items");
                 for (int j=0; j<items.length(); j++) {
                     JSONObject item = items.optJSONObject(j);
-                    list.add(createItem(item.optString("name"), ""));
+                    String itemName = item.optString("name","");
+                    JSONObject nutrition = item.optJSONObject("nutrition");
+                    int calories = nutrition.optInt("calories");
+                    list.add(createItem(itemName + " (" + calories + " Cal)", ""));
                 }
             }
         }
